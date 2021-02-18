@@ -15,3 +15,12 @@ CMakeFiles/
 cmake-build*
 cmake_install.cmake
 Makefile
+
+# build
+*.o
+
+# executables
+a.out
+/hello
+/lc
+/wordcount
