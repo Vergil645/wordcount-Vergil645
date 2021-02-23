@@ -30,7 +30,7 @@ check_char:
 				
                 mov             r9, 1
 				
-				mov             r10b, byte[rsi + rcx]
+                mov             r10b, byte[rsi + rcx]
                 cmp             r10b, 32
                 je              space
                 cmp             r10b, 9
