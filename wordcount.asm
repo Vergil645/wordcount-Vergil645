@@ -30,11 +30,12 @@ check_char:
 				
                 mov             r9, 1
 				
-                cmp             byte[rsi + rcx], 32
+				mov             r10b, byte[rsi + rcx]
+                cmp             r10b, 32
                 je              space
-                cmp             byte[rsi + rcx], 9
+                cmp             r10b, 9
                 jb              skip
-                cmp             byte[rsi + rcx], 13
+                cmp             r10b, 13
                 ja              skip
 				
 space:
@@ -106,4 +107,4 @@ read_error:
 sys_exit        equ             60
 buf_size:       equ             8192
 read_error_msg: db              "read failure", 0x0a
-read_error_len: equ             $ - read_error_msg	
+read_error_len: equ             $ - read_error_msg
