@@ -1,5 +1,5 @@
                 section         .text
-				global          _start
+                global          _start
 				
 _start:
 ; rbx -- счётчик слов
